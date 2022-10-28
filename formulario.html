@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Login </title>
+	<link href="css/cssf/Bootstrap.min.css" rel="stylesheet">
+	<style>
+		.bg{
+			background-image: url(img/BG.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+<!----ENCABEZADO--->
+  <div class=".container encabezado">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom">
+      <a href="index.html" class="d-flex align-items-center mb-6 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use href="index.html"/></svg>
+        <img src="./img/logo.png" width="48" alt="">
+        <span class="fs-4">Pokémon Bank</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="usuario.html" class="nav-link text-dark">¿Quienes somos?</a></li>
+        <li class="nav-item"><a href="" class="nav-link text-dark" aria-current="page">Contactos</a></li>
+        <li class="nav-item"><a href="" class="nav-link text-dark">Tarjetas</a></li>
+        
+      </ul>
+      </header>
+  </div>
+<!---FIN DEL ENCABEZADO--->
+
+	<div class="container w-75 bg-primary mt-5 rounded shadow">
+		<div class="row align-items-stretch">
+			<div class="col bg d-nome d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+			</div>
+			<div class="col bg-white p-5 rounded-end">
+				<div class="text-end">
+				<img src="img/logo3.png" width="48" alt="">
+			</div>
+			
+
+			<h2 class="fw-bold text-center py-5"> Bienvenido</h2>
+
+
+            <!--LOGIN-->
+
+		<form action="usuario.html">
+			<div class="mb-4">
+				<label for="email" class="form-label">Correo electrónico</label>
+				<input type="email" class="form-control" name="email">
+			</div>
+			<div class="mb-4">
+				<label for="password" class="form-label">Contraseña</label>
+				<input type="password" class="form-control" name="password">
+
+			</div>
+			
+			<div class="mb-4 form-check">
+			<input type="checkbox" name="connected" class="form-check-input">
+			<lablel for="connected" class="form-check-label">Recordarme </lablel>
+			</div>
+			<div class="d-grid">
+				<button type="submit" class="btn btn-primary"> Iniciar Sesión</button>
+			</div>
+
+			<div class="my-3">
+				<span>No tienes cuenta?<a href="#"> Registrate</a></span><br>
+				<span><a href="#">Recuperar Contraseña</a></span>
+				
+			</div>
+		</form>
+
+		<!--LOGIN CON REDES SOCIALES-->
+		<div class="container w-100 my-5">
+			<div class="row text-center">
+				<div class="col-12">Iniciar Sesión</div>	
+			</div>
+			<div class="row">
+				<div class="col">
+					<button class="btn btn-outline-primary w-100 my-1">
+						<div class="row align-items-center">
+						<div class="col-2 d-nome d-md-block">
+							<img src="img/fb.png" width="32" alt="">
+						</div>	
+						<div class="col-10 cold-md-8 text-center">
+							Facebook 
+						</div>						
+						</div>
+					</button>
+				</div>
+			<div class="col">
+				<button class="btn btn-outline-danger w-100 my-1">
+						<div class="row align-items-center">
+						<div class="col-2 d-nome d-md-block">
+							<img src="img/google.png" width="32" alt="">
+						</div>	
+						<div class="col-10 cold-md-8 text-center">
+							Google
+						</div>						
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<script src="js/Bootstrap.bundle.min.js"></script>
+</body>
+</html>
